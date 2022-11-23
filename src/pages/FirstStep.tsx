@@ -23,7 +23,7 @@ export const FirstStep: React.FC = () => {
     <StepWrapper pepeVariant={Pepe} revenueValue={revenue}>
       <h1>It's testing time</h1>
       <Input placeholder="Value will be used for the 'Typed Text' filter" />
-      <Flex direction="row" gap="20px">
+      <Flex direction="row" gap="16px">
         <Button isSuccess={true} onClick={handleCustomEventBtnClick}>
           Custom event
         </Button>

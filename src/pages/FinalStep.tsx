@@ -32,7 +32,7 @@ export const FinalStep: React.FC = () => {
   return (
     <StepWrapper pepeVariant={Pepe} revenueValue={revenue}>
       <h1>Well done!</h1>
-      <p>
+      <p style={{ textAlign: "center" }}>
         Now quickly click the 'Finalize revenue' event button or leave the page,
         so that Pepe can go to sleep for the next 24 hours to prepare for the
         next test run.
