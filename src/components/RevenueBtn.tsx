@@ -1,9 +1,10 @@
 import { useContext } from "react";
+import { DispatchIncreaseRevenueContext } from "../Routes";
+import { ActionTypes } from "../revenue/revenueReducer";
 import styled from "@emotion/styled";
 import Revenue from "../img/revenue.png";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
-import { DispatchIncreaseRevenueContext } from "../Routes";
 import Smartlook from "smartlook-client";
 
 const StyledIcon = styled("img")`
@@ -39,7 +40,7 @@ export const RevenueBtn: React.FC<IRevenueButtonProps> = ({
       `Revenue click worth ${revenueValue} USD`,
       revenueEventProps
     );
-    dispatch({ payload: Number(revenueValue) });
+    dispatch({ type: ActionTypes.ADD, payload: Number(revenueValue) });
   };
 
   return (

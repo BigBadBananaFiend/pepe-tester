@@ -1,20 +1,23 @@
 import {
   Button,
-  ContentWrapper,
-  RevenueBtn,
   Redirect,
   ShowCurrentRevenue,
   StepWrapper,
 } from "../components";
-import { useContext } from "react";
 import { CurrentRevenueContext } from "../Routes";
 import Pepe from "../img/happy.png";
 import Backward from "../img/backward.png";
 import Smartlook from "smartlook-client";
+import { useContext } from "react";
+import { DispatchIncreaseRevenueContext } from "../Routes";
+import { useNavigate } from "react-router-dom";
+import { ActionTypes } from "../revenue/revenueReducer";
 
 export const FinalStep: React.FC = () => {
   const revenue = "30";
   const currentRevenue = useContext(CurrentRevenueContext);
+  const dispatch = useContext(DispatchIncreaseRevenueContext);
+  const navigate = useNavigate();
 
   const handleFinalizeRevenue = () => {
     const revenueEventProps = {
@@ -22,6 +25,8 @@ export const FinalStep: React.FC = () => {
       revenue: currentRevenue.revenue,
     };
     Smartlook.track("Finalize revenue", revenueEventProps);
+    dispatch({ type: ActionTypes.SET, payload: 0 });
+    navigate("/");
   };
 
   return (

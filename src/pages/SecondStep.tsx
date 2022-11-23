@@ -1,8 +1,6 @@
 import {
   Button,
   Flex,
-  ContentWrapper,
-  RevenueBtn,
   Redirect,
   StepWrapper,
   ShowCurrentRevenue,
