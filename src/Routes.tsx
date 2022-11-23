@@ -6,7 +6,7 @@ import {
 } from "./revenue/revenueReducer";
 import { AppWrapper } from "./components/Wrappers";
 import { FirstStep, SecondStep, FinalStep } from "./pages";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 // TODO: move context and reducer elsewhere, yolo it for now
 const initRevenue = { revenue: 0 };
