@@ -37,10 +37,14 @@ export const FinalStep: React.FC = () => {
         so that Pepe can go to sleep for the next 24 hours to prepare for the
         next test run.
       </p>
-      <Button isSuccess={true} onClick={handleFinalizeRevenue}>
+      <Button
+        isSuccess={true}
+        onClick={handleFinalizeRevenue}
+        id="finalize-revenue"
+      >
         Finalize revenue
       </Button>
-      <Redirect icon={Backward} url={"/second-step"} />
+      <Redirect icon={Backward} url={"/second-step"} id="back" />
       <ShowCurrentRevenue currentRevenue={currentRevenue.revenue} />
     </StepWrapper>
   );

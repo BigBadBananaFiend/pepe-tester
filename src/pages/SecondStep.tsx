@@ -31,6 +31,7 @@ export const SecondStep: React.FC = () => {
         <Button
           isSuccess={true}
           onClick={handleCustomButtonEventWithPropsClick}
+          id="custom-event-with-props-btn"
         >
           Custom event with props
         </Button>

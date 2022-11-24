@@ -24,10 +24,18 @@ export const FirstStep: React.FC = () => {
       <h1>It's testing time</h1>
       <Input placeholder="Value will be used for the 'Typed Text' filter" />
       <Flex direction="row" gap="16px">
-        <Button isSuccess={true} onClick={handleCustomEventBtnClick}>
+        <Button
+          isSuccess={true}
+          onClick={handleCustomEventBtnClick}
+          id="custom-event-btn"
+        >
           Custom event
         </Button>
-        <Button isSuccess={false} onClick={handleThrowError}>
+        <Button
+          isSuccess={false}
+          onClick={handleThrowError}
+          id="throw-an-error-btn"
+        >
           Throw an Error
         </Button>
       </Flex>
