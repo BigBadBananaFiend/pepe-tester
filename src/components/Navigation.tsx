@@ -1,8 +1,8 @@
 import { Button } from "./Button";
-import { Flex } from "./Flex";
 import { INavigationProps } from "./types";
 import { routes } from "../pages/routes";
 import { useNavigate } from "react-router-dom";
+import { Flex } from "./Flex";
 
 export const Navigation: React.FC<INavigationProps> = ({
   currentStep,

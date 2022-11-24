@@ -7,10 +7,6 @@ export interface IFlexContainerProps {
   height?: string;
 }
 
-export interface IShowCurrentRevenueProps {
-  currentRevenue: number;
-}
-
 export interface IInputProps {
   placeholder?: string;
   name?: string;

@@ -1,4 +1,4 @@
-import { Button, Input, Flex, StepContentWrapper } from "../../components";
+import { Button, Input, Flex } from "../../components";
 import Smartlook from "smartlook-client";
 
 export const FirstStep: React.FC = () => {
@@ -11,7 +11,7 @@ export const FirstStep: React.FC = () => {
   };
 
   return (
-    <StepContentWrapper>
+    <>
       <h1>It's testing time</h1>
       <Input placeholder="Lorem ipsum" />
       <Flex direction="row" gap="16px">
@@ -32,6 +32,6 @@ export const FirstStep: React.FC = () => {
           Throw an Error
         </Button>
       </Flex>
-    </StepContentWrapper>
+    </>
   );
 };

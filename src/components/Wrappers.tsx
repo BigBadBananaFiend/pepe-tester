@@ -13,6 +13,8 @@ export const ContentWrapper = styled(Flex)<IFlexContainerProps>`
   height: 560px;
   gap: 24px;
   position: relative;
+  animation: fadeIn 0.4s linear;
+  animation-fill-mode: forwards;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
@@ -21,13 +23,4 @@ export const AppWrapper = styled("div")`
   min-width: 100vw;
   display: flex;
   background-color: #293462;
-`;
-
-export const StepContentWrapper = styled(Flex)`
-  animation: fadeIn 0.4s linear;
-  animation-fill-mode: forwards;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  width: 100%;
 `;

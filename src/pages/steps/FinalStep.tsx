@@ -1,4 +1,4 @@
-import { Button, Flex, StepContentWrapper } from "../../components";
+import { Button, Flex } from "../../components";
 import { CurrentRevenueContext } from "../../Routes";
 import Smartlook from "smartlook-client";
 import { useContext } from "react";
@@ -22,7 +22,7 @@ export const FinalStep: React.FC = () => {
   };
 
   return (
-    <StepContentWrapper>
+    <>
       <h1>Well done!</h1>
       <Flex width="70%">
         <p style={{ textAlign: "center" }}>
@@ -39,6 +39,6 @@ export const FinalStep: React.FC = () => {
       >
         Finalize revenue
       </Button>
-    </StepContentWrapper>
+    </>
   );
 };
