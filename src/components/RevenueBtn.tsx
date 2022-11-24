@@ -48,7 +48,12 @@ export const RevenueBtn: React.FC<IRevenueButtonProps> = ({
       content={`Add revenue of ${revenueValue}$`}
       placement={"bottom"}
     >
-      <StyledIcon src={Revenue} alt="revenue" onClick={handleAddRevenue} />
+      <StyledIcon
+        src={Revenue}
+        alt="revenue"
+        onClick={handleAddRevenue}
+        id="revenue"
+      />
     </StyledTippy>
   );
 };
