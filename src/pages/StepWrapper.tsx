@@ -12,6 +12,7 @@ export const StepWrapper: React.FC = () => {
     currentStep === 0 ? String(currentStep + 1 * 10) : String(currentStep * 10);
 
   // basically just to trigger transition animation. there must be a better way to do this but yolo now
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const key = useMemo(() => Math.random(), [currentStep]);
 
   // i should probably just use the useCurrentStep hook inside of the components instead of prop drillin. will also fix later.
