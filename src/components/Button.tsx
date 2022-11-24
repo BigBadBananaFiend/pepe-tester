@@ -1,9 +1,5 @@
 import styled from "@emotion/styled";
-
-interface IButtonProps {
-  isSuccess: boolean;
-  onClick?: () => void;
-}
+import { IButtonProps } from "./types";
 
 export const Button = styled("button")<IButtonProps>`
   all: unset;
@@ -11,7 +7,9 @@ export const Button = styled("button")<IButtonProps>`
   border-radius: 16px;
   padding: 12px 28px;
   font-weight: bold;
-  background-color: ${(props) => (!props.isSuccess ? "#D61C4E" : "#FEDB39")};
-  color: ${(props) => (!props.isSuccess ? "white" : "black")};
+  background-color: ${(props) => props.backgroundColor};
+  color: ${(props) => props.color};
   cursor: pointer;
 `;
+
+// "#D61C4E" : "#FEDB39"

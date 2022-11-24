@@ -1,3 +1,3 @@
-export * from "./FirstStep";
-export * from "./SecondStep";
-export * from "./FinalStep";
+export * from "./steps/FirstStep";
+export * from "./steps/SecondStep";
+export * from "./steps/FinalStep";

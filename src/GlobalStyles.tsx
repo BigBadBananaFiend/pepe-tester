@@ -6,10 +6,11 @@ export const GlobalStyles = css`
   body, html, * {
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.25;
   }
   h1 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
   }
 
