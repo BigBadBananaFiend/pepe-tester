@@ -39,8 +39,8 @@ export const SecondStep: React.FC = () => {
         </Button>
       </Flex>
       <Flex direction="row" width="100%" justifyContent="space-around">
-        <Redirect url={"/"} icon={Backward} />
-        <Redirect url={"/final-step"} icon={Forward} />
+        <Redirect url={"/"} icon={Backward} id="back" />
+        <Redirect url={"/final-step"} icon={Forward} id="next" />
       </Flex>
       <ShowCurrentRevenue currentRevenue={currentRevenue.revenue} />
     </StepWrapper>

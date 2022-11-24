@@ -11,16 +11,17 @@ interface IRedirectProps {
   url: string;
   icon: string;
   children?: React.ReactNode;
+  id?: string
 }
 
 export const Redirect: React.FC<IRedirectProps> = forwardRef<
   HTMLAnchorElement,
   IRedirectProps
->(({ url, children, icon }: IRedirectProps, ref) => {
+>(({ url, children, icon, id }: IRedirectProps, ref) => {
   if (!!icon) {
     return (
       <Link to={url} ref={ref}>
-        <StyledRedirect>
+        <StyledRedirect id={id}>
           <img width={"100%"} src={icon} alt="redirect"></img>
         </StyledRedirect>
       </Link>

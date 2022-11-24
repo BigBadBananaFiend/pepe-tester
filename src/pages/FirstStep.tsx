@@ -31,7 +31,7 @@ export const FirstStep: React.FC = () => {
           Throw an Error
         </Button>
       </Flex>
-      <Redirect url={"/second-step"} icon={Forward} />
+      <Redirect url={"/second-step"} icon={Forward} id="next" />
       <ShowCurrentRevenue currentRevenue={currentRevenue.revenue} />
     </StepWrapper>
   );
