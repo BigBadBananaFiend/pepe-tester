@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
-import { IFlexContainerProps, IStepWrapperProps } from "./types";
+import { IFlexContainerProps } from "./types";
 import { Flex } from "./Flex";
-import { RevenueBtn } from "./RevenueBtn";
 
 // I stole the shadow I don't enjoy doing them very much :(
 export const ContentWrapper = styled(Flex)<IFlexContainerProps>`
@@ -11,6 +10,7 @@ export const ContentWrapper = styled(Flex)<IFlexContainerProps>`
   border-radius: 16px;
   background-color: white;
   max-width: 720px;
+  height: 560px;
   gap: 24px;
   position: relative;
   animation: fadeIn 0.4s linear;
@@ -24,15 +24,3 @@ export const AppWrapper = styled("div")`
   display: flex;
   background-color: #293462;
 `;
-
-export const StepWrapper: React.FC<IStepWrapperProps> = ({
-  children,
-  revenueValue,
-  pepeVariant,
-}) => (
-  <ContentWrapper alignItems="center">
-    <RevenueBtn revenueValue={revenueValue} />
-    <img src={pepeVariant} alt="pepe" width={"160px"} />
-    {children}
-  </ContentWrapper>
-);

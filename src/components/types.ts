@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface IFlexContainerProps {
   direction?: "row" | "column";
   gap?: string;
@@ -9,16 +7,20 @@ export interface IFlexContainerProps {
   height?: string;
 }
 
-export interface IShowCurrentRevenueProps {
-  currentRevenue: number;
-}
-
-export interface IStepWrapperProps {
-  revenueValue: string;
-  pepeVariant: string;
-  children: React.ReactNode;
-}
-
 export interface IInputProps {
   placeholder?: string;
+  name?: string;
+  label?: string;
 }
+
+export interface IPepeProps {
+  currentStep: number;
+}
+
+export interface IButtonProps {
+  backgroundColor: string;
+  color: string;
+  onClick?: () => void;
+}
+
+export interface INavigationProps extends IPepeProps {}

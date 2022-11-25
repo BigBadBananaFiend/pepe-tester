@@ -1,9 +1,12 @@
-import { IShowCurrentRevenueProps } from "./types";
+import { useContext } from "react";
+import { CurrentRevenueContext } from "../Routes";
 
-export const ShowCurrentRevenue: React.FC<IShowCurrentRevenueProps> = ({
-  currentRevenue,
-}: IShowCurrentRevenueProps) => (
-  <p>
-    Current revenue: <span>{currentRevenue}</span>
-  </p>
-);
+export const ShowCurrentRevenue: React.FC = () => {
+  const revenueContext = useContext(CurrentRevenueContext);
+
+  return (
+    <p>
+      Current revenue: <span>{revenueContext.revenue}</span>
+    </p>
+  );
+};
