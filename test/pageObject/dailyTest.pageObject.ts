@@ -31,7 +31,7 @@ export class PepeTesterPage {
 
   async assertFirstStepUrl() {
     await expect(this.page).toHaveURL(
-      "https://bigbadbananafiend.github.io/pepe-tester/"
+      "https://bigbadbananafiend.github.io/pepe-tester/#/first-step"
     );
   }
 
