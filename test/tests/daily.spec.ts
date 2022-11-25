@@ -1,5 +1,5 @@
 import { test, expect, chromium } from "@playwright/test";
-import { PepeTesterPage } from "../pageObject/pepeTest";
+import { PepeTesterPage } from "../pageObject/dailyTest.pageObject";
 
 test("Create some events!", async ({ page }) => {
   const pepe = new PepeTesterPage(page);
