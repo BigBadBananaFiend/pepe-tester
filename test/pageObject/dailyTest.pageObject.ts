@@ -1,5 +1,4 @@
 import { Locator, Page, expect } from "@playwright/test";
-import { getByText } from "@testing-library/react";
 
 export class PepeTesterPage {
   public page: Page;
